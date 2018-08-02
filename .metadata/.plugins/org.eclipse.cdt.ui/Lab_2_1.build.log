@@ -1,0 +1,19 @@
+22:08:11 **** Incremental Build of configuration Debug for project Lab_2_1 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/trema/Documents/UNI/Year 4/Semester 2/CC3501/Practical/CC3501-Labs/Lab_2_1/Static_Code/PDD" -I"C:/Users/trema/Documents/UNI/Year 4/Semester 2/CC3501/Practical/CC3501-Labs/Lab_2_1/Static_Code/IO_Map" -I"C:/Users/trema/Documents/UNI/Year 4/Semester 2/CC3501/Practical/CC3501-Labs/Lab_2_1/Sources" -I"C:/Users/trema/Documents/UNI/Year 4/Semester 2/CC3501/Practical/CC3501-Labs/Lab_2_1/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'main':
+../Sources/main.c:63:19: warning: multi-character character constant [-Wmultichar]
+     Term1_SendNum('\r\n');
+                   ^
+Finished building: ../Sources/main.c
+ 
+Building target: Lab_2_1.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/trema/Documents/UNI/Year 4/Semester 2/CC3501/Practical/CC3501-Labs/Lab_2_1/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/trema/Documents/UNI/Year 4/Semester 2/CC3501/Practical/CC3501-Labs/Lab_2_1/Project_Settings/Linker_Files" -Wl,-Map,"Lab_2_1.map" -specs=nano.specs -specs=nosys.specs -o "Lab_2_1.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/FC321.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/RealTimeLdd1.o ./Generated_Code/TU1.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
+Finished building target: Lab_2_1.elf
+ 
+
+22:08:12 Build Finished (took 879ms)
+
